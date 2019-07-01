@@ -11,5 +11,81 @@
 </head>
 <body>
 	<!-- your comparison interface with alert here -->
+  
+  
+  <form action="" method="post" >
+    <input type="text" id="search-bar" placeholder="" value="Type a city..." maxlength="25" autocomplete="off"/>
+    <input type="submit" id="searchBTN" value="+"/>
+    
+  </form>
+  
+  <div class="container-comparison" >
+    <div class="full-city">
+      <div class="city 1">
+        <div class="one-city-container">
+          <h3 class="city-compn-info">
+            ✮ Berkeley, CA
+            <p>
+              Cloudy
+            </p>
+          </h3>
+          
+          <div class="city-compn-container">
+            <ul class="hourly-city">
+              <li class="tu">80</li>
+              <li class="td">7AM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="city 2">
+         <div class="one-city-container">
+           <h3 class="city-compn-info">
+             ☆ New York, NY
+             <p>
+             Extreme Wind
+               <img src="https://cdn4.iconfinder.com/data/icons/social-messaging-ui-color-and-shapes-3/177800/114-512.png" class="alert-hourly1">
+           </p>
+           </h3>
+           
+          <div class="city-compn-container">
+            <ul class="hourly-city">
+              <li class="tu">85</li>
+              <li class="td">10AM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="city 3">
+         <div class="one-city-container">
+           <h3 class="city-compn-info">
+            |0 7 : 0 0| 
+           </h3>
+           
+           <div class="city-compn-container">
+            <ul class="hourly-city">
+              <li class="tu">AM</li>
+              <li class="td">PM</li>
+            </ul>
+           </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  
+  <footer>
+    <div class="footer-container-search">
+      <div class="container">
+        <div class="home-icon-position" >
+        <img src ="https://user-images.githubusercontent.com/901123/27444852-9f382708-5745-11e7-959f-a2bed199f83f.png" class="home-icon">
+          <img src="data:image/png;base64,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" class="right-icon">
+        </div>
+        </div>
+    </div>
+  </footer>
+  
+  
 </body>
 </html>
